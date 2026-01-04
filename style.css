@@ -1,101 +1,82 @@
-/* إعدادات عامة */
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: "Segoe UI", Tahoma, sans-serif;
+  box-sizing: border-box;
+  font-family: "Courier New", monospace;
 }
 
-body {
-  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
-  color: #ffffff;
-  min-height: 100vh;
+body.dark {
+  background: #050b12;
+  color: #00ffcc;
+}
+
+body.light {
+  background: #f4f4f4;
+  color: #111;
+}
+
+header, footer {
+  padding: 15px;
+  border-bottom: 1px solid currentColor;
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* الهيدر */
-header {
-  text-align: center;
-  padding: 30px 20px;
-  background: rgba(0, 0, 0, 0.4);
-}
-
-header h1 {
-  font-size: 2rem;
-  margin-bottom: 10px;
-}
-
-header p {
-  opacity: 0.85;
-}
-
-/* المحتوى */
 main {
-  flex: 1;
+  padding: 20px;
   display: grid;
   gap: 20px;
-  padding: 20px;
-  max-width: 900px;
+  max-width: 1100px;
   margin: auto;
 }
 
-/* كروت */
 .card {
-  background: rgba(255, 255, 255, 0.08);
-  border-radius: 12px;
-  padding: 20px;
-  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
-}
-
-.card h2 {
-  margin-bottom: 10px;
-  color: #00eaff;
-}
-
-.card p,
-.card li {
-  margin-bottom: 8px;
-  line-height: 1.6;
-}
-
-/* زر */
-button {
-  background: #00eaff;
-  color: #002b36;
-  border: none;
-  padding: 12px 20px;
-  font-size: 1rem;
+  border: 1px solid currentColor;
+  padding: 15px;
   border-radius: 8px;
+}
+
+button {
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  padding: 8px 14px;
   cursor: pointer;
-  transition: 0.3s;
-  margin-top: 10px;
+  margin: 5px 0;
 }
 
 button:hover {
-  background: #00b8cc;
+  background: currentColor;
+  color: #000;
 }
 
-/* ناتج الموقع */
-#output {
-  margin-top: 15px;
-  background: rgba(0, 0, 0, 0.4);
-  padding: 10px;
-  border-radius: 8px;
+.out {
+  margin-top: 10px;
 }
 
-/* الفوتر */
-footer {
-  text-align: center;
-  padding: 15px;
-  font-size: 0.9rem;
-  background: rgba(0, 0, 0, 0.4);
-  opacity: 0.8;
+#map {
+  height: 280px;
+  margin-top: 10px;
 }
 
-/* استجابة للموبايل */
-@media (max-width: 600px) {
-  header h1 {
-    font-size: 1.5rem;
-  }
+textarea, input {
+  width: 100%;
+  background: transparent;
+  color: inherit;
+  border: 1px solid currentColor;
+  margin-top: 5px;
+  padding: 6px;
+}
+
+.terminal {
+  background: rgba(0,0,0,0.4);
+}
+
+#terminal {
+  height: 150px;
+  overflow-y: auto;
+  border: 1px solid currentColor;
+  padding: 5px;
+  margin-bottom: 5px;
 }
