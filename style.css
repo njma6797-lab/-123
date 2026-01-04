@@ -1,0 +1,101 @@
+/* إعدادات عامة */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* الهيدر */
+header {
+  text-align: center;
+  padding: 30px 20px;
+  background: rgba(0, 0, 0, 0.4);
+}
+
+header h1 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+header p {
+  opacity: 0.85;
+}
+
+/* المحتوى */
+main {
+  flex: 1;
+  display: grid;
+  gap: 20px;
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
+
+/* كروت */
+.card {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  box-shadow: 0 0 20px rgba(0, 255, 255, 0.1);
+}
+
+.card h2 {
+  margin-bottom: 10px;
+  color: #00eaff;
+}
+
+.card p,
+.card li {
+  margin-bottom: 8px;
+  line-height: 1.6;
+}
+
+/* زر */
+button {
+  background: #00eaff;
+  color: #002b36;
+  border: none;
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.3s;
+  margin-top: 10px;
+}
+
+button:hover {
+  background: #00b8cc;
+}
+
+/* ناتج الموقع */
+#output {
+  margin-top: 15px;
+  background: rgba(0, 0, 0, 0.4);
+  padding: 10px;
+  border-radius: 8px;
+}
+
+/* الفوتر */
+footer {
+  text-align: center;
+  padding: 15px;
+  font-size: 0.9rem;
+  background: rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+}
+
+/* استجابة للموبايل */
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
